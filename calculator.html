@@ -1,0 +1,256 @@
+<html>
+
+<head>
+<style>
+.city {
+   float: left;
+   margin: 10px;
+   padding: 10px;
+   width: 300px;
+   height: 300px;
+   border: 1px solid black;
+}   
+.city2 {
+   float: left;
+   margin: 10px;
+   padding: 10px;
+   width: 300px;
+   height: 580px;
+   border: 1px solid black;
+}
+</style>
+</head>
+
+
+
+<body>
+<div class="city">
+<h1>CALCULATOR</h1>
+#1
+<input readonly="readonly" id="BM1">
+<p id="BM0"></p>
+#2
+<input readonly="readonly"  id="BM2">
+<br />
+<p>=</p>
+<p id="ANS">ANSWER</p>
+<br />
+<p id="INS">Enter Number 1</p>
+</div>
+
+<div class="city2">
+<br />
+<button type="button" onclick="num1()" style="width:80px;height:90">1</button>
+<button type="button" onclick="num2()" style="width:80px;height:90">2</button>
+<button type="button" onclick="num3()" style="width:80px;height:90">3</button>
+<br/>
+<button type="button" onclick="num4()" style="width:80px;height:90">4</button>
+<button type="button" onclick="num5()" style="width:80px;height:90">5</button>
+<button type="button" onclick="num6()" style="width:80px;height:90">6</button>
+<br/>
+<button type="button" onclick="num7()" style="width:80px;height:90">7</button>
+<button type="button" onclick="num8()" style="width:80px;height:90">8</button>
+<button type="button" onclick="num9()" style="width:80px;height:90">9</button>
+<br/>
+<button type="button" onclick="num0()" style="width:80px;height:90">0</button>
+<button type="button" onclick="numadd()" style="width:80px;height:90">+</button>
+<button type="button" onclick="numminus()" style="width:80px;height:90">-</button>
+<br/>
+<button type="button" onclick="numtimes()" style="width:80px;height:90">*</button>
+<button type="button" onclick="numdivide()" style="width:80px;height:90">/</button>
+<button type="button" onclick="numequals()" style="width:80px;height:90">=</button>
+<button type="button" onclick="numreload()" style="width:80px;height:90">C</button>
+</div>
+<script>
+
+var nr1;
+var nr2;
+var nr3;
+var op;
+var iden = 1;
+
+var none;
+var ntwo;
+var ntotal;
+function num1() {
+
+if(iden == 1){
+document.getElementById("INS").innerHTML = "Enter Number 2";
+none = document.getElementById("BM1").value;
+document.getElementById("BM1").value = (none + "1");
+
+}else if(iden == 2){
+document.getElementById("INS").innerHTML = "Enter Number Equals";
+ntwo = document.getElementById("BM2").value;
+document.getElementById("BM2").value = (ntwo + "1");
+
+}
+}
+
+function num2() {
+if(iden == 1){
+document.getElementById("INS").innerHTML = "Enter Number 2";
+none = document.getElementById("BM1").value;
+document.getElementById("BM1").value = (none + "2");
+
+}else if(iden == 2){
+document.getElementById("INS").innerHTML = "Enter Number Equals";
+ntwo = document.getElementById("BM2").value;
+document.getElementById("BM2").value = (ntwo + "2");
+
+}
+}
+
+function num3(){
+if(iden == 1){
+document.getElementById("INS").innerHTML = "Enter Number 2";
+none = document.getElementById("BM1").value;
+document.getElementById("BM1").value = (none + "3");
+
+}else if(iden == 2){
+document.getElementById("INS").innerHTML = "Enter Number Equals";
+ntwo = document.getElementById("BM2").value;
+document.getElementById("BM2").value = (ntwo + "3");
+
+}
+}
+function num4(){
+if(iden == 1){
+document.getElementById("INS").innerHTML = "Enter Number 2";
+none = document.getElementById("BM1").value;
+document.getElementById("BM1").value = (none + "4");
+
+}else if(iden == 2){
+document.getElementById("INS").innerHTML = "Enter Number Equals";
+ntwo = document.getElementById("BM2").value;
+document.getElementById("BM2").value = (ntwo + "4");
+
+}
+}
+function num5(){
+if(iden == 1){
+document.getElementById("INS").innerHTML = "Enter Number 2";
+none = document.getElementById("BM1").value;
+document.getElementById("BM1").value = (none + "5");
+
+}else if(iden == 2){
+document.getElementById("INS").innerHTML = "Enter Number Equals";
+ntwo = document.getElementById("BM2").value;
+document.getElementById("BM2").value = (ntwo + "5");
+
+}
+}
+function num6(){
+if(iden == 1){
+document.getElementById("INS").innerHTML = "Enter Number 2";
+none = document.getElementById("BM1").value;
+document.getElementById("BM1").value = (none + "6");
+
+}else if(iden == 2){
+document.getElementById("INS").innerHTML = "Enter Number Equals";
+ntwo = document.getElementById("BM2").value;
+document.getElementById("BM2").value = (ntwo + "6");
+
+}
+}
+function num7(){
+if(iden == 1){
+document.getElementById("INS").innerHTML = "Enter Number 2";
+none = document.getElementById("BM1").value;
+document.getElementById("BM1").value = (none + "7");
+
+}else if(iden == 2){
+document.getElementById("INS").innerHTML = "Enter Number Equals";
+ntwo = document.getElementById("BM2").value;
+document.getElementById("BM2").value = (ntwo + "7");
+
+}
+}
+function num8(){
+if(iden == 1){
+document.getElementById("INS").innerHTML = "Enter Number 2";
+none = document.getElementById("BM1").value;
+document.getElementById("BM1").value = (none + "8");
+
+}else if(iden == 2){
+document.getElementById("INS").innerHTML = "Enter Number Equals";
+ntwo = document.getElementById("BM2").value;
+document.getElementById("BM2").value = (ntwo + "8");
+
+}
+}
+function num9(){
+if(iden == 1){
+document.getElementById("INS").innerHTML = "Enter Number 2";
+none = document.getElementById("BM1").value;
+document.getElementById("BM1").value = (none + "9");
+
+}else if(iden == 2){
+document.getElementById("INS").innerHTML = "Enter Number Equals";
+ntwo = document.getElementById("BM2").value;
+document.getElementById("BM2").value = (ntwo + "9");
+
+}
+}
+function num0(){
+if(iden == 1){
+document.getElementById("INS").innerHTML = "Enter Number 2";
+none = document.getElementById("BM1").value;
+document.getElementById("BM1").value = (none + "0");
+
+}else if(iden == 2){
+document.getElementById("INS").innerHTML = "Enter Number Equals";
+ntwo = document.getElementById("BM2").value;
+document.getElementById("BM2").value = (ntwo + "0");
+
+}
+}function numequals(){
+iden = 1;
+
+none = Number(document.getElementById("BM1").value);
+ntwo = Number(document.getElementById("BM2").value);
+if(op == 1){
+ntotal = Number(none) + Number(ntwo);
+}else if(op == 2){
+ntotal = Number(none) - Number(ntwo);
+}else if(op == 3){
+ntotal = Number(none) * Number(ntwo);
+}else if(op == 4){
+ntotal = Number(none) / Number(ntwo);
+}
+
+document.getElementById("ANS").innerHTML = ntotal;
+
+}function numadd() {
+iden = 2;
+op = 1;
+document.getElementById("BM0").innerHTML = "+";
+}function numminus() {
+iden = 2;
+op = 2;
+document.getElementById("BM0").innerHTML = "-";
+}function numtimes() {
+iden = 2;
+op = 3;
+document.getElementById("BM0").innerHTML = "*";
+}function numdivide() {
+iden = 2;
+op = 4;
+document.getElementById("BM0").innerHTML = "/";
+}function numreload() {
+location.reload();
+}
+
+
+
+
+
+</script>
+
+
+
+</body>
+
+
+</html>
+
