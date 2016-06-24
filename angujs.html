@@ -1,0 +1,52 @@
+<html ng-app="myApp">
+<head>
+
+<script src="C:\Users\Admin\Downloads\angular.min.js">
+</script>
+
+<script>
+///<reference path="angular.min.js />
+var app = angular.module('myApp',[]);
+
+app.controller('myCtrl', function($scope){
+$scope.message = "Mebs";
+
+var employee = {
+	firstname: "Marvin", mebs1:0, mebs2:0,
+	lastname: "Tabora",
+	gender: "male"
+
+};
+$scope.employee = employee;
+
+$scope.mebs = function (tech){
+employee.mebs1++;
+}
+
+
+
+});
+</script>
+
+
+
+</head>
+
+
+<body>
+
+<div ng-controller="myCtrl">
+<p>Name: <input type="text" ng-model="message"></p>
+<p ng-bind="name"></p>
+<p>{{ message }}</p>
+</div>
+
+<div ng-controller="myCtrl">
+<p>{{ employee.lastname }}</p>
+<input type="button" value="Like" ng-click="mebs(tech)">
+<p> {{ employee.mebs1 }}</p>
+</div>
+
+
+</body>
+</html>

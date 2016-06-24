@@ -1,0 +1,97 @@
+<html ng-app="myapp">
+<head>
+<script src="C:\Users\Admin\Downloads\angular.min.js">
+</script>
+
+<style>
+div {
+  transition: all linear 0.5s;
+  background-color: lightblue;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.ng-hide {
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  top:-200px;
+  left: 200px;
+}
+</style>
+
+<script>
+///<reference path="angular.min.js />
+
+var app = angular.module('myapp',[]);
+var count = 0;
+app.controller('mc', function ($scope){
+
+
+
+
+
+$scope.computed = 0;
+
+$scope.computez = function(){
+	var g1 = parseInt($scope.grade1);
+var g2 = parseInt($scope.grade2);
+var g3 = parseInt($scope.grade3);
+var g4 = parseInt($scope.grade4);
+var tot = g1 + g2 + g3 + g4;
+var td = tot / 4;
+	$scope.computed = td.toString();
+}
+
+$scope.showd = function(){
+count = 1;
+
+}
+
+
+
+
+
+});
+
+
+
+</script>
+
+
+
+</head>
+<body>
+
+<div ng-controller="mc">
+
+<input type="text" value="*"  ng-model="grade1" placeholder="Enter 1st Grade" />
+<br />
+<br />
+<input type="text"  value="*" ng-model="grade2" placeholder="Enter 2nd Grade" />
+<br />
+<br />
+<input type="text" value="*" ng-model="grade3" placeholder="Enter 3rd Grade" />
+<br />
+<br />
+<input type="text" value="*" ng-model="grade4" placeholder="Enter 4th Grade" />
+<br/><br/>
+<input type="button" ng-click="computez()" value="compute" />
+<input type="button" ng-model="hidey" value="show" />
+<h1>Hide the DIV: <input type="checkbox" ng-model="myCheck"></h1>
+<div ng-hide="hidey">
+
+</div>
+<div ng-hide="myCheck"><img  src="orca-23182_960_720.png" /> </div>
+<p>grade1 {{ grade1 }} </p>
+<p>grade2 {{ grade2 }} </p>
+<p>grade3 {{ grade3 }} </p>
+<p>grade4 {{ grade4 }} </p>
+<p>total {{ computed }} </p>
+</div>
+
+</body>
+
+</html>
